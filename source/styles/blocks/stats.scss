@@ -1,0 +1,68 @@
+.stats-background {
+  @media (max-width: $mobile-width) {
+    background-color: $special-background;
+  }
+}
+
+.stats__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $primary-color-text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include media-title-size;
+  }
+}
+
+.stats__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $special-background;
+  }
+}
+
+.stats__intro {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include media-font-size;
+    color: $base-color-text;
+  }
+}
+
+.stats__description {
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.stats__number {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.stats__cost {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-color-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

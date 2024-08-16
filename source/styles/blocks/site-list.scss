@@ -1,0 +1,24 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__link {
+  display: block;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

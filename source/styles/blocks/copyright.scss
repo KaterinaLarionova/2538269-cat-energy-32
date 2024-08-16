@@ -1,0 +1,8 @@
+.copyright__link {
+  text-decoration: none;
+  color: $base-color-text;
+}
+
+.copyright__text {
+  @include media-secondary-size;
+}

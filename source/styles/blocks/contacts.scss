@@ -1,0 +1,21 @@
+.contacts__promo {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $promo-color-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include media-secondary-size;
+  }
+}

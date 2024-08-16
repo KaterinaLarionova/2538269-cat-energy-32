@@ -1,0 +1,11 @@
+.catalog__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    @include media-title-size;
+  }
+}

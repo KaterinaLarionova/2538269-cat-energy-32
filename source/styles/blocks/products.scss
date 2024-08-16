@@ -1,0 +1,35 @@
+.products__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.products__item {
+  font-size: 14px;
+  line-height: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    @include media-secondary-size;
+  }
+}
+
+.products__name {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary-dark-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

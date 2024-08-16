@@ -1,0 +1,26 @@
+.gift {
+  background-image: url("../../images/gift-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/gift-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/gift-background-desctop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.gift__promo {
+  font-size: 16px;
+  line-height: 20px;
+  color: $accent-color-text;
+}

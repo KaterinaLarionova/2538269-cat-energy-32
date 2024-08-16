@@ -1,0 +1,36 @@
+.subscribe__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subscribe__promo {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribe__input::placeholder {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}

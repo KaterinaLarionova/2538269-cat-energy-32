@@ -1,0 +1,41 @@
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.program__item {
+  background-color: $secondary-background;
+}
+
+.program__title {
+  margin: 0;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.program__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include media-font-size;
+  }
+}
+
+.program__link {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary-color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+}

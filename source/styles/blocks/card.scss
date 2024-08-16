@@ -1,0 +1,33 @@
+.card__link {
+  text-decoration: none;
+  color: $primary-dark-color;
+}
+
+.card__title {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.card__info {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include media-secondary-size;
+  }
+}
+
+.card__info--more {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
