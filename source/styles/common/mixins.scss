@@ -1,9 +1,31 @@
-@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+@mixin font-face($font-family, $font-weight, $font-style, $woff2, $woff) {
   @font-face {
     font-family: $font-family;
     font-weight: $font-weight;
     font-style: $font-style;
-    src: $font-src;
+    src: $woff2, $woff;
     font-display: swap;
   }
+}
+
+@mixin accent-mix-button {
+  background-color: $accent-color;
+  color: $accent-color-text;
+  text-transform: uppercase;
+}
+
+@mixin media-font-size {
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-color-text;
+}
+
+@mixin media-title-size {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+@mixin media-secondary-size {
+  font-size: 16px;
+  line-height: 20px;
 }
