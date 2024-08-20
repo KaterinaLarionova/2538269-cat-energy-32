@@ -13,10 +13,19 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="logo-group">
-    <a class="logo" href="index.html">
-      <img class="logo-image" src="#" width="70" height="59" alt="логотип Cat energy.">
-      <img class="logo-text" src="#" width="118" height="21" alt="Cat energy">
+  <div class="logo-group logo">
+    <a class="logo__link" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
+    </a>
+    <a class="logo__link" href="index.html">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
   </div>
   <nav class="main-nav">
@@ -289,7 +298,7 @@
         <li class="catalog__card card more-cards">
           <div class="card__container">
             <div class="card__block card__block--button">
-              <button class="card__button" type="button">
+              <button class="card__button card__button--current" type="button">
                 <span class="visually-hidden">Посмотреть еще карточки.</span>
               </button>
             </div>
@@ -365,21 +374,29 @@
 </main>
 <footer class="main-footer">
   <section class="main-footer__contacts contacts">
+    <div class="contacts__wrapper">
     <h2 class="visually-hidden">Наши контакты</h2>
     <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
     <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+    </div>
+    <div class="contacts__location location">
     <picture>
       <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
               srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
       <source media="(min-width: 768px)" width="768" height="400" type="image/png"
               srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-      <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
+      <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
             width="320" height="362" alt="Карта с адресом">
     </picture>
+    </div>
   </section>
   <div class="main-footer__wrapper">
-    <div class="main-footer__logo">
-      <img class="logo-text" src="#" width="128" height="24" alt="Cat energy.">
+    <div class="main-footer__logo logo">
+      <a class="logo__link" href="index.html">
+        <picture>
+          <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
+        </picture>
+      </a>
     </div>
     <div class="main-footer__social social">
       <ul class="social__list">
@@ -407,7 +424,7 @@
       <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
           target="_blank" rel="noreferrer noopener">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <img class="copyright__image" src="images/icon-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </div>

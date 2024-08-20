@@ -1,4 +1,4 @@
-@mixin font-face($font-family, $font-weight, $font-style, $woff2, $woff) {
+@mixin print-type ($font-family, $font-weight, $font-style, $woff2, $woff) {
   @font-face {
     font-family: $font-family;
     font-weight: $font-weight;
@@ -28,4 +28,16 @@
 @mixin media-secondary-size {
   font-size: 16px;
   line-height: 20px;
+}
+
+@mixin background-item {
+  background-position: center;
+  background-color: $accent-color;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }

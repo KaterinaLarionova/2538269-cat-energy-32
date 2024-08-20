@@ -8,6 +8,60 @@
   background-color: $secondary-background;
 }
 
+.program__slim {
+  background-color: $accent-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.program__slim::before {
+  content: "";
+  background-image: url("../../icons/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+  }
+}
+
+.program__fat {
+  background-color: $accent-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.program__fat::before {
+  content: "";
+  background-image: url("../../icons/icon-cat-fat.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+}
+
 .program__title {
   margin: 0;
   font-family: $oswald;
@@ -38,4 +92,12 @@
   color: $primary-color-text;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.program__link::after {
+  content: "";
+  background-image: url("../../icons/icon-sring.svg");
+  width: 32px;
+  height: 10px;
+  position: absolute;
 }

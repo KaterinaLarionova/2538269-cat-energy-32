@@ -21,3 +21,50 @@
   @include media-font-size;
   color: $base-color-text;
 }
+
+.advantages__item--leaf,
+.advantages__item--water,
+.advantages__item--nutrition,
+.advantages__item--time {
+  position: relative;
+}
+
+.advantages__item--leaf::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--water::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/icon-water.svg");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--nutrition::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/icon-nutrition.svg");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--time::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/icon-time.svg");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}

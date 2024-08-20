@@ -15,10 +15,17 @@
 <header class="main-header header-background">
   <div class="logo-group logo">
     <a class="logo__link" href="index.html">
-      <img class="logo__image" src="#" width="70" height="59" alt="логотип Cat energy.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
     </a>
     <a class="logo__link" href="index.html">
-      <img class="logo__text" src="#" width="118" height="21" alt="Cat energy.">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
   </div>
   <nav class="main-nav">
@@ -56,13 +63,15 @@
     <h2 class="visually-hidden">Виды программ</h2>
     <ul class="program__list">
       <li class="program__item">
-        <h3 class="program__title program-slim">похудение</h3>
+        <div class="program__slim"></div>
+        <h3 class="program__title">похудение</h3>
         <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
           на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="program__link" href="#">каталог slim</a>
       </li>
       <li class="program__item">
-        <h3 class="program__title program-fat">Набор массы</h3>
+        <div class="program__fat"></div>
+        <h3 class="program__title">Набор массы</h3>
         <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="program__link" href="#">каталог pro</a>
@@ -148,7 +157,9 @@
   <div class="main-footer__wrapper">
     <div class="main-footer__logo logo ">
       <a class="logo__link" href="index.html">
-        <img class="logo__text" src="#" width="128" height="24" alt="Cat energy">
+        <picture>
+          <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
+        </picture>
       </a>
     </div>
     <div class="main-footer__social social">
@@ -177,7 +188,7 @@
       <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
           target="_blank" rel="noreferrer noopener">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <img class="copyright__image" src="images/icon-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </div>
