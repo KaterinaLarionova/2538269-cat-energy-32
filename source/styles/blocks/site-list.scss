@@ -4,6 +4,10 @@
   list-style-type: none;
 }
 
+.site-list__item {
+  border-bottom: 1px solid $line-color;
+}
+
 .site-list__link {
   display: block;
   font-family: $oswald;
@@ -11,6 +15,7 @@
   line-height: 20px;
   text-decoration: none;
   color: $primary-color-text;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

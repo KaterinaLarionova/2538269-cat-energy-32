@@ -13,39 +13,46 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="logo-group logo">
-    <a class="logo__link" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-      </picture>
-    </a>
-    <a class="logo__link" href="index.html">
-      <picture>
-        <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
-      </picture>
-    </a>
-  </div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button" aria-label="Откройте меню."></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item-current">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
+  <div class="main-header__container wrapper">
+    <div class="main-header__lining">
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59"
+                    type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50"
+                    type="image/svg+xml">
+            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo__link" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18"
+                    type="image/svg+xml">
+            <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
+          </picture>
+        </a>
+      </div>
+      <button class="main-header__toggle button" type="button" aria-label="Откройте меню."></button>
     </div>
-  </nav>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item-current">
+            <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
-<main class="main-container">
+<main class="main-container wrapper">
   <section class="catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
     <div class="catalog__container">
@@ -374,47 +381,45 @@
 </main>
 <footer class="main-footer">
   <section class="main-footer__contacts contacts">
-    <div class="contacts__wrapper">
-    <h2 class="visually-hidden">Наши контакты</h2>
-    <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-    <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+    <div class="contacts__wrapper wrapper">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
     </div>
     <div class="contacts__location location">
-    <picture>
-      <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
-              srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
-      <source media="(min-width: 768px)" width="768" height="400" type="image/png"
-              srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-      <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
-            width="320" height="362" alt="Карта с адресом">
-    </picture>
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
+                srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png"
+                srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+        <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
+             width="320" height="362" alt="Карта с адресом">
+      </picture>
     </div>
   </section>
-  <div class="main-footer__wrapper">
+  <div class="main-footer__wrapper wrapper">
     <div class="main-footer__logo logo">
       <a class="logo__link" href="index.html">
-        <picture>
-          <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
-        </picture>
+        <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
       </a>
     </div>
     <div class="main-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"
-              rel="noreferrer noopener">
+             rel="noreferrer noopener">
             <span class="visually-hidden">Перейти во ВКонтакте.</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-              target="_blank" rel="noreferrer noopener">
+             target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Перейти в Youtube.</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
-              rel="noreferrer noopener">
+             rel="noreferrer noopener">
             <span class="visually-hidden">Перейти в Telegram.</span>
           </a>
         </li>
@@ -422,9 +427,8 @@
     </div>
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
-          target="_blank" rel="noreferrer noopener">
-        <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__image" src="images/icon-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+         target="_blank" rel="noreferrer noopener">HTML Academy
+        <span class="copyright__image" aria-label="Логотип HTML Academy"></span>
       </a>
     </div>
   </div>

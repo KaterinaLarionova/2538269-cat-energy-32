@@ -1,8 +1,12 @@
-.header-background {
-  @media (min-width: $desktop-width) {
-    background-image: url("../../images/promo-background-desctop@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50%;
-  }
+.main-header__lining {
+  display: flex;
+  border-bottom: 1px solid $line-color;
+}
+
+.main-header__toggle::after {
+  content: "";
+  background-image: url("../../icons/close-button.svg");
+  width: 18px;
+  height: 18px;
+  display: block;
 }

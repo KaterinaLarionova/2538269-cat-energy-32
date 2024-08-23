@@ -10,17 +10,31 @@
   height: 22px;
 }
 
+.social__link:hover{
+  background-color: $accent-color;
+  cursor: pointer;
+}
+
+.social__link:focus {
+  background-color: $accent-color;
+}
+
+.social__link:active {
+  background-color: $accent-color;
+  opacity: 0.3;
+}
+
 .social__link--vkontakte {
   mask-image: url("../../icons/icon-vkontacte.svg");
-  background-color: #666666;
+  background-color: $accent-dark-color;
 }
 
 .social__link--youtube {
   mask-image: url("../../icons/icon-youtube.svg");
-  background-color: #666666;
+  background-color: $accent-dark-color;
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/icon-telegram.svg");
-  background-color: #666666;
+  background-color: $accent-dark-color;
 }

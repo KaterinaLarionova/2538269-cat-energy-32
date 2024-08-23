@@ -1,8 +1,24 @@
 .copyright__link {
+  display: block;
   text-decoration: none;
   color: $base-color-text;
+  @include media-secondary-size;
+  cursor: pointer;
 }
 
-.copyright__text {
-  @include media-secondary-size;
+.copyright__image {
+  display: block;
+  mask-image: url("../../icons/icon-html-academy.svg");
+  background-color: $accent-dark-color;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__link:hover .copyright__image,
+.copyright__link:focus-visible .copyright__image {
+  background-color: $accent-color;
+}
+
+.copyright__link:active .copyright__image {
+  opacity: 0.3;
 }

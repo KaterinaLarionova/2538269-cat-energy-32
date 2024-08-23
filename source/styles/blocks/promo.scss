@@ -12,22 +12,29 @@
     background-position: center;
     background-color: #68b738;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/promo-background-desctop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #68b738;
+  }
 }
 
 .promo__title {
   margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: $accent-color-text;
   font-weight: 400;
   text-align: center;
-
-  @media (max-width: $mobile-width) {
-    font-size: 36px;
-    line-height: 36px;
-    color: $accent-color-text;
-  }
+  padding: 27px 15px 25px 16px;
 
   @media (min-width: $tablet-width) {
     @include media-title-size;
     color: $primary-color-text;
+    padding: 65px 204px 40px 90px;
   }
 }
 

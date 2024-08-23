@@ -1,0 +1,55 @@
+.range {
+  display: flex;
+  justify-content: center;
+}
+
+.range__toggle {
+  display: block;
+  padding: 0;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border: none;
+}
+
+.range__toggle::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: $base-background;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.range__string::after {
+  content: "";
+  mask-image: url("../../icons/slider-string.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #666666;
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.range__toggle:hover::before {
+  border: 2px solid #68b738;
+}
+
+.range__toggle:hover, .range__string:hover::after {
+  background-color: #68b738;
+  cursor: pointer;
+}
+
+.range__toggle:active {
+  opacity: 0.6;
+}
+
+.range__string:active::after {
+  opacity: 0.6;
+}
