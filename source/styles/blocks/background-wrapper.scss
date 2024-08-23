@@ -1,0 +1,16 @@
+.background-wrapper {
+  @media (max-width: $mobile-width) {
+    background-image: url("../../images/promo-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 302px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/promo-background-desctop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

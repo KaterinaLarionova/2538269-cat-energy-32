@@ -1,4 +1,6 @@
 .page__body {
+  display: flex;
+  flex-direction: column;
   font-family: $lato;
   font-size: 14px;
   line-height: 18px;
