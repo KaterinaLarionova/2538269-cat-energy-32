@@ -1,1 +1,15 @@
+.main-nav {
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 14px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 29px;
+  }
+}

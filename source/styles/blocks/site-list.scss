@@ -2,14 +2,32 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+    min-width: 440px;
+    margin-left: auto;
+  }
 }
 
 .site-list__item {
-  border-bottom: 1px solid $line-color;
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid $line-color;
+  }
+}
+
+.site-list__item:first-child {
+  @media (max-width: $mobile-width) {
+  border-top: 1px solid $line-color;
+  }
 }
 
 .site-list__link {
   display: block;
+  text-align: center;
+  padding: 22px 0 24px;
   font-family: $oswald;
   font-size: 20px;
   line-height: 20px;
@@ -20,10 +38,13 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 14px 0 12px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    color: $accent-color-text;
+    padding: 16px 0 13px;
   }
 }

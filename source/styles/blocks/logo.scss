@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 174px;
+    gap: 13px
+  }
+}
+
+.logo__image {
+  display: block;
+}
+
+.logo__text {
+  display: block;
+}
+

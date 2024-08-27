@@ -1,3 +1,7 @@
+.stats {
+  padding: 25px 0 40px;
+}
+
 .stats-background {
   background: $special-background;
 
@@ -20,12 +24,17 @@
 }
 
 .stats__intro {
-  margin: 0;
+  margin: 40px 0 20px;
 
   @media (min-width: $tablet-width) {
     @include media-font-size;
     color: $base-color-text;
   }
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .stats__description {
@@ -56,6 +65,8 @@
   line-height: 20px;
   color: $primary-color-text;
   text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

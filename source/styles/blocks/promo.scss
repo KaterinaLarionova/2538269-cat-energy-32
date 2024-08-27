@@ -1,36 +1,49 @@
 .promo {
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
   font-family: $oswald;
   font-size: 14px;
   line-height: 14px;
+  background-image: url("../../images/promo-background-mobile@1x.jpg"), linear-gradient(#64a73b 302px, #ffffff 302px);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px 302px, 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .promo__container {
   color: $accent-color-text;
   font-weight: 400;
   text-align: center;
-  padding: 27px 15px 29px 16px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 805px;
+    margin: 0 10px 10px 90px;
+    text-align: left;
+  }
 }
 
 .promo__title {
-  margin: 0;
+  margin: 27px 0 25px;
   font-size: 36px;
   line-height: 36px;
   color: $accent-color-text;
   font-weight: 400;
-  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     @include media-title-size;
     color: $primary-color-text;
-    text-align: left;
-    padding-bottom: 40px;
+    margin: 0 0 40px;
   }
 }
 
 .promo__slogan {
-  margin: 0;
+  margin: 0 0 29px;
   text-align: center;
   text-transform: uppercase;
 
@@ -43,6 +56,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
     color: $primary-color-text;
     text-align: left;
   }
@@ -50,5 +64,25 @@
 
 .promo__image {
   display: block;
-  margin:0 auto;
+  margin:0 auto 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    left: 29px;
+    bottom: 266px;
+    margin: 0;
+  }
 }
+
+.promo__button {
+  @include accent-mix-button;
+  padding: 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 244px;
+    padding: 14px 26px;
+  }
+}
+

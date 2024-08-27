@@ -1,5 +1,8 @@
+.advantages {
+  margin-bottom: 49px;
+}
 .advantages__title {
-  margin: 0;
+  margin: 0 0 40px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
@@ -15,6 +18,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .advantages__item {

@@ -13,8 +13,7 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <div class="main-header__container wrapper">
-    <div class="main-header__lining">
+  <nav class="main-nav wrapper">
       <div class="logo">
         <a class="logo__link" href="index.html">
           <picture>
@@ -33,10 +32,7 @@
           </picture>
         </a>
       </div>
-      <button class="main-header__toggle button" type="button" aria-label="Откройте меню."></button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+      <button class="main-header__toggle" type="button" aria-label="Откройте меню."></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item-current">
             <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
@@ -48,14 +44,12 @@
             <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </div>
-  <section class="promo background-wrapper">
-    <div class="promo__container">
+  </nav>
+  <section class="promo">
+    <div class="wrapper">
+      <div class="promo__container">
       <h1 class="promo__title">Функциональное<br>питание&nbsp;для&nbsp;котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-    </div>
     <picture>
       <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
               srcset="images/promo-can-desctop@1x.png 1x, images/promo-can-desctop@2x.png 2x">
@@ -64,11 +58,13 @@
       <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x"
             width="280" height="270" alt="Баночка корма с курицей.">
     </picture>
-    <a class="promo__button button button--accent" href="#">Подобрать программу</a>
+    <a class="button promo__button button--accent" href="#">Подобрать программу</a>
+    </div>
+    </div>
   </section>
 </header>
 <main class="main-container">
-  <section class="program wrapper">
+  <section class="program">
     <h2 class="visually-hidden">Виды программ</h2>
     <ul class="program__list">
       <li class="program__item">
@@ -80,7 +76,7 @@
       </li>
       <li class="program__item">
         <div class="program__fat"></div>
-        <h3 class="program__title">Набор массы</h3>
+        <h3 class="program__title program__title--fat">Набор массы</h3>
         <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="program__link" href="#">каталог pro</a>
