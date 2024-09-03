@@ -1,16 +1,29 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 56px;
+
 
   @media (min-width: $tablet-width) {
     max-width: 174px;
     gap: 13px
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 202px;
+  }
 }
 
 .logo__image {
   display: block;
+  margin-right: 56px;
+}
+
+.logo__footer {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .logo__text {

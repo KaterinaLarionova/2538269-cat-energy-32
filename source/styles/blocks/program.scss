@@ -1,6 +1,14 @@
 .program {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
 }
 
 .program__list {
@@ -10,11 +18,33 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .program__item {
   padding: 30px 33px 18px 20px;
   background-color: $secondary-background;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+  }
 }
 
 .program__slim {
@@ -30,6 +60,16 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    right: 44px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 34px;
+    right: auto;
+
   }
 }
 
@@ -47,6 +87,15 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
+    bottom: 15px;
+    left: calc(50% - 70px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    bottom: 15px;
+    left: calc(50% - 35px);
   }
 }
 
@@ -62,6 +111,15 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    right: 66px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 34px;
+    right: auto;
   }
 }
 
@@ -79,6 +137,15 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
+    bottom: 45px;
+    left: calc(50% - 130px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    bottom: 25px;
+    left: calc(50% - 66px);
   }
 }
 
@@ -95,6 +162,11 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 73px;
   }
 }
 
@@ -107,15 +179,20 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
-
   @media (min-width: $tablet-width) {
     @include media-font-size;
+    padding-bottom: 48px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
   }
 }
 
 .program__link {
-  display: block;
-  padding: 4px 9px 0;
+  display: flex;
+  padding: 4px 57px 4px 0;
   margin-top: 15px;
   font-family: $oswald;
   font-size: 16px;
@@ -123,12 +200,23 @@
   color: $primary-color-text;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 4px 57px 4px 0;
+  }
 }
 
 .program__link::after {
+  display: block;
   content: "";
   background-image: url("../../icons/icon-sring.svg");
-  width: 32px;
-  height: 10px;
-  position: absolute;
+  width: 24px;
+  height: 12px;
+  position: relative;
+  margin-left: 25px;
 }

@@ -20,6 +20,11 @@
 }
 
 .button--more {
+  display: block;
   background-color: $secondary-background;
   color: $base-color-text;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
 }
+

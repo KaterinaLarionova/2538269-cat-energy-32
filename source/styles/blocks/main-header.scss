@@ -1,10 +1,10 @@
 .main-header {
   @media (min-width: $desktop-width) {
-    background-image: url("../../images/promo-background-desctop@2x.jpg"),
+    background-image: url("../../images/promo-background-desctop@1x.jpg"),
     linear-gradient(90deg, #ffffff 50%, #64a83b 50%);
     background-repeat: no-repeat;
-    background-position: calc(50% + 360px) center, center;
-    background-size: contain, cover;
+    background-position: calc(50% + 360px), 100%;
+    background-size: 720px 694px, 100%;
   }
 }
 
@@ -29,4 +29,8 @@
     height: 24px;
     display: block;
   }
+}
+
+.main-header__catalog {
+  background-image: none;
 }

@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 6px 0 2px;
+    gap: 27px;
+    justify-content: normal;
+  }
 }
 
 .social__link {
   display: block;
-  width: 28px;
-  height: 22px;
+  /*width: 27px;
+  height: 22px;*/
 }
 
 .social__link:hover{
@@ -27,14 +37,20 @@
 .social__link--vkontakte {
   mask-image: url("../../icons/icon-vkontacte.svg");
   background-color: $accent-dark-color;
+  width: 27px;
+  height: 17px;
 }
 
 .social__link--youtube {
   mask-image: url("../../icons/icon-youtube.svg");
   background-color: $accent-dark-color;
+  width: 24px;
+  height: 19px;
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/icon-telegram.svg");
   background-color: $accent-dark-color;
+  width: 20px;
+  height: 18px;
 }

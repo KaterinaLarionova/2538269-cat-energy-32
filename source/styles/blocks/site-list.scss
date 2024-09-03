@@ -48,3 +48,9 @@
     padding: 16px 0 13px;
   }
 }
+
+.site-list__link--catalog {
+  @media (min-width: $desktop-width) {
+    color: $promo-color-text
+  }
+}

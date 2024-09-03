@@ -4,13 +4,12 @@
   font-family: $oswald;
   font-size: 14px;
   line-height: 14px;
-  background-image: url("../../images/promo-background-mobile@1x.jpg"), linear-gradient(#64a73b 302px, #ffffff 302px);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 320px 302px, 100%;
 
-  @media (min-width: $tablet-width) {
-    background-image: none;
+  @media (max-width: $mobile-width) {
+    background-image: url("../../images/promo-background-mobile@1x.jpg"), linear-gradient(#64a73b 302px, #ffffff 302px);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 320px 302px, 100%;
   }
 }
 
@@ -22,9 +21,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    min-height: 805px;
-    margin: 0 10px 10px 90px;
+    min-height: 810px;
+    padding: 0 0 0 90px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 552px;
+    padding: 82px 0 0 80px;
   }
 }
 
@@ -69,9 +73,17 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
-    left: 29px;
-    bottom: 266px;
+    top: 340px;
+    right: calc(50% - 353px);
+    /*transform: translate(-50%, -51%);*/
+    background-attachment: fixed;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 50%;
+    transform: translate(-29%, 0);
   }
 }
 
