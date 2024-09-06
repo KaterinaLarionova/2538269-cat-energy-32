@@ -3,6 +3,7 @@
   padding-top: 26px;
   padding-bottom: 26px;
   gap: 17px;
+  background-color: $secondary-background;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -44,6 +45,9 @@
 
   @media (min-width: $tablet-width) {
     @include media-secondary-size;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
     text-align: right;
   }
 

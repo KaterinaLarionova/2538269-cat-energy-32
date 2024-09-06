@@ -24,23 +24,23 @@
           <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <a class="logo__link" href="index.html">
+      <a class="logo__link logo__link--header" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21"
                   type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18"
                   type="image/svg+xml">
-          <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy.">
+          <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="22" alt="Cat Energy.">
         </picture>
       </a>
     </div>
     <button class="main-header__toggle" type="button" aria-label="Откройте меню."></button>
     <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item-current">
+      <li class="site-list__item">
         <a class="site-list__link site-list__link--catalog" href="index.html" aria-current="page">Главная</a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог продукции</a>
+        <a class="site-list__link site-list__link--catalog site-list__item-current" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link site-list__link--catalog" href="#">Подбор программы</a>
@@ -50,7 +50,9 @@
 </header>
 <main class="main-container">
   <section class="catalog">
-    <h1 class="catalog__title wrapper">Каталог продукции</h1>
+    <div class="catalog__wrapper">
+    <h1 class="catalog__title">Каталог продукции</h1>
+    </div>
     <div class="catalog__container">
       <ul class="catalog__list">
         <li class="catalog__card card">
@@ -327,38 +329,38 @@
       </ul>
     </div>
   </section>
-  <section class="products">
+  <section class="products wrapper">
     <h2 class="products__title">Дополнительные товары</h2>
     <div class="products__block">
       <table class="products__list">
         <tr class="products__item">
           <td class="products__name">Сахарозаменитель</td>
-          <td class="products__value">1 упаковка (100 г)</td>
-          <td class="products__price">200 ₽</td>
+          <td class="products__value">1 упаковка (100 г)
+            <p class="products__price">200 ₽</p></td>
           <td class="products__button">
             <a class="products__link button button--accent" href="#">Заказать</a>
           </td>
         </tr>
         <tr class="products__item">
           <td class="products__name">Питьевая вода</td>
-          <td class="products__value">5 литров</td>
-          <td class="products__price">50 ₽</td>
+          <td class="products__value">5 литров
+            <p class="products__price">50 ₽</p></td>
           <td class="products__button">
             <a class="products__link button button--accent" href="#">Заказать</a>
           </td>
         </tr>
         <tr class="products__item">
           <td class="products__name">молоко</td>
-          <td class="products__value">1 литр</td>
-          <td class="products__price">100 ₽</td>
+          <td class="products__value">1 литр
+          <p class="products__price">100 ₽</p></td>
           <td class="products__button">
             <a class="products__link button button--accent" href="#">Заказать</a>
           </td>
         </tr>
         <tr class="products__item">
           <td class="products__name">витамины</td>
-          <td class="products__value">1 упаковка (30 г)</td>
-          <td class="products__price">300 ₽</td>
+          <td class="products__value">1 упаковка (30 г)
+            <p class="products__price">300 ₽</p></td>
           <td class="products__button">
             <a class="products__link button button--accent" href="#">Заказать</a>
           </td>
@@ -367,13 +369,13 @@
     </div>
     <div class="products__gift gift">
       <span class="gift__box"></span>
-      <p class="gift__promo">Закажите все и получите чехол для кота в подарок!</p>
+      <p class="gift__promo">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
     </div>
   </section>
-  <section class="subscribe">
+  <section class="subscribe wrapper">
     <div class="subscribe__container">
       <h2 class="subscribe__title">Акции и новинки</h2>
-      <div>
+      <div class="subscribe__box">
         <p class="subscribe__promo">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/courses" method="post">
           <label class="subscribe__input-mail" for="email">
@@ -392,7 +394,8 @@
     <div class="contacts__wrapper wrapper">
       <h2 class="visually-hidden">Наши контакты</h2>
       <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8
+        <span>Санкт-Петербург</span></p>
     </div>
     <div class="contacts__location location">
       <picture>
@@ -407,7 +410,7 @@
   </section>
   <div class="main-footer__wrapper wrapper">
     <div class="main-footer__logo logo">
-      <a class="logo__link" href="index.html">
+      <a class="logo__link logo__link--footer" href="index.html">
         <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
       </a>
     </div>

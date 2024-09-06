@@ -6,9 +6,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 33px;
+    flex-wrap: wrap;
+    gap: 34px;
     min-width: 440px;
     margin-left: auto;
+  }
+
+  @media(min-width: $desktop-width) {
+    gap: 35px;
   }
 }
 
@@ -21,6 +26,16 @@
 .site-list__item:first-child {
   @media (max-width: $mobile-width) {
   border-top: 1px solid $line-color;
+  }
+}
+
+.site-list__item-current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $accent-color;
   }
 }
 
@@ -38,14 +53,14 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding: 14px 0 12px;
+    padding: 14px 0 6px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     color: $accent-color-text;
-    padding: 16px 0 13px;
+    padding: 16px 0 6px;
   }
 }
 

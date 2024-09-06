@@ -10,12 +10,34 @@
 
   @media (min-width: $desktop-width) {
     max-width: 202px;
+    gap: 14px;
   }
 }
 
+.logo__link--header {
+  width: 101px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.logo__link--footer {
+  display: flex;
+  width: 128px;
+  height: 24px;
+}
 .logo__image {
   display: block;
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .logo__footer {
