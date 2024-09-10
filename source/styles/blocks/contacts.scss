@@ -3,10 +3,10 @@
   padding-top: 26px;
   padding-bottom: 26px;
   gap: 17px;
-  background-color: $secondary-background;
+  background-color: $base-background;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 60px 70px 40px;
     gap: 306px;
   }
 
@@ -16,10 +16,10 @@
     background-color: $base-background;
     width: 565px;
     height: 199px;
-    padding: 60px 78px 80px;
-    top: 95px;
+    padding: 60px 78px 58px;
+    top: 96px;
     gap: 87px;
-    right: calc(1220px - 476px);
+    right: calc(1220px - 456px);
     z-index: 2;
   }
 }
@@ -47,7 +47,8 @@
     @include media-secondary-size;
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    margin-bottom: 20px;
+    gap: 20px;
     text-align: right;
   }
 

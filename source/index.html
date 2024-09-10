@@ -14,7 +14,7 @@
 <body class="page__body">
 <header class="main-header">
   <nav class="main-nav wrapper">
-    <div class="logo">
+    <div class="main-nav__logo logo">
       <a class="logo__link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59"
@@ -36,8 +36,8 @@
     </div>
     <button class="main-header__toggle" type="button" aria-label="Откройте меню."></button>
     <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item-current">
-        <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
+      <li class="site-list__item">
+        <a class="site-list__link site-list__link--index" href="index.html" aria-current="page">Главная</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -58,7 +58,7 @@
           <source media="(min-width: 768px)" width="709" height="609" type="image/png"
                   srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
           <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x"
-               width="280" height="270" alt="Баночка корма с курицей.">
+                width="280" height="270" alt="Баночка корма с курицей.">
         </picture>
         <a class="button promo__button button--accent" href="#">Подобрать программу</a>
       </div>
@@ -103,26 +103,28 @@
     </ul>
   </section>
   <section class="stats stats-background">
-    <div class="wrapper">
-      <h2 class="stats__title">Живой пример</h2>
-      <p class="stats__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов
-        в
-        день.
-      </p>
-      <div class="stats__wrapper">
-        <dl class="stats__list">
-          <div class="stats__item">
-            <dt class="stats__description">снижение веса</dt>
-            <dd class="stats__number">5 кг</dd>
-          </div>
-          <div class="stats__item">
-            <dt class="stats__description">затрачено времени</dt>
-            <dd class="stats__number">60 дней</dd>
-          </div>
-        </dl>
-        <p class="stats__cost">Затраты на питание: <span class="stats__sum">15 000 РУБ.</span></p>
+    <div class="stats__container wrapper">
+      <div class="stats__text">
+        <h2 class="stats__title">Живой пример</h2>
+        <p class="stats__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в
+          день.
+        </p>
+        <div class="stats__wrapper">
+          <dl class="stats__list">
+            <div class="stats__item">
+              <dt class="stats__description">снижение веса</dt>
+              <dd class="stats__number">5 кг</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__description">затрачено времени</dt>
+              <dd class="stats__number">60 дней</dd>
+            </div>
+          </dl>
+          <p class="stats__cost">Затраты на питание: <span class="stats__sum">15 000 РУБ.</span></p>
+        </div>
       </div>
       <div class="stats__slider slider">
         <div class="slider__image">
@@ -132,7 +134,7 @@
             <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg"
                     srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x">
             <img class="slider__image-fat" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x"
-                 width="280" height="256" alt="Фотография упитанного кота.">
+                  width="280" height="256" alt="Фотография упитанного кота.">
           </picture>
           <picture>
             <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
@@ -140,14 +142,10 @@
             <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg"
                     srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
             <img class="slider__image-slim" src="images/cat-slim-mobile@1x.png"
-                 srcset="images/cat-slim-mobile@2x.png 2x"
-                 width="280" height="256" alt="Фотография худого кота.">
+                  srcset="images/cat-slim-mobile@2x.png 2x"
+                  width="280" height="256" alt="Фотография худого кота.">
           </picture>
-        </div>
-        <div class="slider__ranger range" aria-label="Ренджер сравнение до и после.">
-          <button class="range__toggle" type="button">
-            <span class="range__string"></span>
-          </button>
+          <button class="range__toggle" type="button" aria-label="Ренджер сравнение до и после."></button>
         </div>
       </div>
     </div>
@@ -158,55 +156,62 @@
     <div class="contacts__wrapper wrapper">
       <h2 class="visually-hidden">Наши контакты</h2>
       <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__address--city">Санкт-Петербург</span></p>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__address--city">Санкт-Петербург</span>
+      </p>
     </div>
     <div class="contacts__location location">
+      <iframe class="location__interactive"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197857!2d30.320472476826442!3d59.9387191620941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1725801058405!5m2!1sru!2sru"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+      </iframe>
       <picture>
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
                 srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/png"
                 srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
         <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
-             width="320" height="362" alt="Карта с адресом">
+              width="320" height="362" alt="Карта с адресом">
       </picture>
     </div>
   </section>
   <div class="main-footer__background">
-    <div class=" main-footer__wrapper wrapper">
-    <div class="main-footer__logo logo">
-      <a class="logo__footer logo__link--footer" href="index.html">
-        <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
-      </a>
+    <div class=" main-footer__wrapper main-footer__wrapper--index wrapper">
+      <div class="main-footer__logo logo">
+        <a class="logo__footer logo__link--footer" href="index.html">
+          <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"
+                rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти во ВКонтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти в Youtube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
+                rel="noreferrer noopener">
+              <span class="visually-hidden">Перейти в Telegram.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
+            target="_blank" rel="noreferrer noopener">HTML Academy
+          <span class="copyright__image"></span>
+        </a>
+      </div>
     </div>
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"
-             rel="noreferrer noopener">
-            <span class="visually-hidden">Перейти во ВКонтакте.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-             target="_blank" rel="noreferrer noopener">
-            <span class="visually-hidden">Перейти в Youtube.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
-             rel="noreferrer noopener">
-            <span class="visually-hidden">Перейти в Telegram.</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
-         target="_blank" rel="noreferrer noopener">HTML Academy
-        <span class="copyright__image"></span>
-      </a>
-    </div>
-  </div>
   </div>
 </footer>
 </body>

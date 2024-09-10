@@ -166,12 +166,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 73px;
+    margin-left: 163px;
+    margin-bottom: 73px;
   }
 }
 
 .program__title--fat {
-  margin-left: 50px;
+  @media (max-width: $mobile-width) {
+    margin-left: 50px;
+  }
 }
 
 .program__description {
@@ -219,4 +222,8 @@
   height: 12px;
   position: relative;
   margin-left: 25px;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }

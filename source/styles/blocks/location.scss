@@ -1,4 +1,15 @@
-.location__map {
+.location__interactive {
   display: block;
+  border: 0;
+  height: 362px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.location__map {
+  display: none;
   margin: 0 auto;
 }

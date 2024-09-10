@@ -8,11 +8,21 @@
   text-decoration: none;
   border: none;
   margin: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: #8ec36d;
 }
 
 .button--accent {
@@ -28,3 +38,11 @@
   line-height: 20px;
 }
 
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  background-color: #ebebeb;
+  color: #444444;
+}

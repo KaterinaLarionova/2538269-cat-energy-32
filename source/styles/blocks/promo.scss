@@ -27,8 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 552px;
-    padding: 82px 0 0 80px;
+    min-height: 506px;
+    padding: 37px 0 0 80px;
   }
 }
 
@@ -75,7 +75,6 @@
     display: block;
     top: 340px;
     right: calc(50% - 353px);
-    /*transform: translate(-50%, -51%);*/
     background-attachment: fixed;
     margin: 0;
   }
@@ -83,7 +82,7 @@
   @media (min-width: $desktop-width) {
     top: 0;
     left: 50%;
-    transform: translate(-29%, 0);
+    transform: translate(-29%, -45px);
   }
 }
 
@@ -97,4 +96,3 @@
     padding: 14px 26px;
   }
 }
-

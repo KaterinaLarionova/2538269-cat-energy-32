@@ -24,6 +24,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
 
 .logo__link--footer {
@@ -40,15 +44,6 @@
   }
 }
 
-.logo__footer {
-  padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
 .logo__text {
   display: block;
 }
-

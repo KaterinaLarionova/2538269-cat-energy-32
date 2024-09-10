@@ -2,7 +2,7 @@
   padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 37px;
+    padding: 0 37px 38px;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
   }
 
@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) {
     width: 250px;
     height: 244px;
-    padding: 10px 0 14px;
+    padding: 3px 0 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,10 +49,16 @@
 }
 
 .card__link--big {
-  padding: 3px 28px;
+  @media (min-width: $tablet-width) {
+  padding: 0 28px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
-.card__link--title {
+.card__header {
   text-decoration: none;
   color: $primary-dark-color;
 
@@ -82,7 +88,7 @@
     width: 135px;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 auto 14px;
+    margin: 0 auto 13px;
   }
 
   @media (min-width: $desktop-width) {

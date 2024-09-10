@@ -64,8 +64,20 @@
   }
 }
 
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 .site-list__link--catalog {
   @media (min-width: $desktop-width) {
     color: $promo-color-text
   }
+}
+
+.site-list__link--index {
+  border-bottom: 1px solid $accent-color-text;
 }

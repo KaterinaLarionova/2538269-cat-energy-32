@@ -22,6 +22,12 @@
     background-image: linear-gradient(#ffffff 140px, #f2f2f2 140px);
   }
 }
+.stats__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 224px;
+  }
+}
 
 .stats__title {
   font-family: $oswald;
@@ -38,6 +44,15 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 146px;
+  }
+}
+
+.stats__text {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
   }
 }
 
@@ -80,12 +95,16 @@
 
   @media (min-width: $tablet-width) {
     width: 367px;
+    margin-bottom: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 
 .stats__item {
   width: 124px;
-  /*min-height: 56px;*/
   position: relative;
   border: 1px solid #cdcdcd;
 
@@ -101,6 +120,7 @@
   position: absolute;
   bottom: -4px;
   left: 50%;
+  margin: 0 auto -5px;
   transform: translate(-50%, 50%);
   background-color: #eaeaea;
 
@@ -108,14 +128,14 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $base-background;
-    bottom: -4px;
+    bottom: 6px;
     left: 14%;
     right: 5%;
     transform: translate(-7%, 50%);
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $special-background;
+    background-color: $secondary-background;
   }
 }
 
@@ -124,7 +144,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $primary-color-text;
-  padding: 11px 0 17px;
+  padding: 14px 0 18px;
   display: block;
   margin: 0;
   text-align: center;

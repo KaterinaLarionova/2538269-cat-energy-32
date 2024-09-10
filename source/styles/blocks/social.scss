@@ -8,14 +8,17 @@
   gap: 26px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 26px;
+    width: 170px;
     align-items: center;
+    justify-content: flex-start;
     padding: 6px 0 2px;
-    gap: 27px;
-    justify-content: normal;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    width: 132px;
   }
 }
 

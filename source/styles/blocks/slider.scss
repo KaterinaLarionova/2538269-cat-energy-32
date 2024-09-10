@@ -1,20 +1,3 @@
-.slider {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 111px;
-    top: 0;
-    padding: 0;
-    width: 560px;
-    height: 512px;
-  }
-}
-
 .slider__image {
   width: 280px;
   height: 256px;

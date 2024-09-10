@@ -4,25 +4,54 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 104px;
+  }
 }
 
 .subscribe__title {
+  position: relative;
+  width: fit-content;
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $primary-color-text;
+  background-color: $base-background;
   margin: 0 0 32px;
+  box-shadow: -40px 0 0 0 $base-background, 40px 0 0 0 $base-background;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 0 0 66px;
+    margin: 0 0 66px 40px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+    margin: 0 0 72px;
+  }
+}
+
+.subscribe__title::before {
+  content: "";
+  background: $accent-color;
+  position: absolute;
+  height: 2px;
+  width: 100vw;
+  right: 0;
+  top: 10px;
+  box-shadow: 100vw 0 0 0 $accent-color;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
   }
 }
 
@@ -30,6 +59,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .subscribe__promo {
@@ -44,13 +77,20 @@
     line-height: 32px;
     padding-left: 38px;
     padding-right: 38px;
+    align-items: center;
   }
 }
 
 .subscribe__form {
   display: flex;
-  padding-right: 38px;
-  padding-left: 38px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
 }
 
 .subscribe__input {
@@ -66,6 +106,10 @@
     width: 376px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .subscribe__input::placeholder {
@@ -78,4 +122,12 @@
   width: 100%;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+  }
 }

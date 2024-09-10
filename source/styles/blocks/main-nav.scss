@@ -6,10 +6,19 @@
   @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 65px;
+    gap: 15px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
     padding-bottom: 74px;
   }
+}
+
+.main-nav__logo:hover {
+  opacity: 0.8;
+}
+
+.main-nav__logo:active {
+  opacity: 0.6;
 }
