@@ -4,6 +4,7 @@
   align-items: center;
   text-decoration: none;
   color: $base-color-text;
+
   @include media-secondary-size;
   cursor: pointer;
 

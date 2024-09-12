@@ -35,7 +35,7 @@
       </a>
     </div>
     <button class="main-header__toggle" type="button" aria-label="Откройте меню."></button>
-    <ul class="main-nav__list site-list">
+    <ul class="site-list site-list__no-js">
       <li class="site-list__item">
         <a class="site-list__link site-list__link--index" href="index.html" aria-current="page">Главная</a>
       </li>
@@ -145,7 +145,7 @@
                   srcset="images/cat-slim-mobile@2x.png 2x"
                   width="280" height="256" alt="Фотография худого кота.">
           </picture>
-          <button class="range__toggle" type="button" aria-label="Ренджер сравнение до и после."></button>
+          <button class="slider__range" type="button" aria-label="Ренджер сравнение до и после."></button>
         </div>
       </div>
     </div>
@@ -156,16 +156,10 @@
     <div class="contacts__wrapper wrapper">
       <h2 class="visually-hidden">Наши контакты</h2>
       <p class="contacts__promo">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__address--city">Санкт-Петербург</span>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span>
       </p>
     </div>
     <div class="contacts__location location">
-      <iframe class="location__interactive"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197857!2d30.320472476826442!3d59.9387191620941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1725801058405!5m2!1sru!2sru"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
-      </iframe>
       <picture>
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
                 srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
@@ -174,12 +168,18 @@
         <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
               width="320" height="362" alt="Карта с адресом">
       </picture>
+      <iframe class="location__interactive"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197857!2d30.320472476826442!3d59.9387191620941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1725801058405!5m2!1sru!2sru"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
+      </iframe>
     </div>
   </section>
   <div class="main-footer__background">
     <div class=" main-footer__wrapper main-footer__wrapper--index wrapper">
       <div class="main-footer__logo logo">
-        <a class="logo__footer logo__link--footer" href="index.html">
+        <a class="logo__footer" href="index.html">
           <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
         </a>
       </div>

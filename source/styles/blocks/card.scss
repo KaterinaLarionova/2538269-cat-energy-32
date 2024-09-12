@@ -44,13 +44,13 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     height: 210px;
-    padding: 19px 0 19px;
+    padding: 19px 0;
   }
 }
 
 .card__link--big {
   @media (min-width: $tablet-width) {
-  padding: 0 28px 10px;
+    padding: 0 28px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,10 +102,13 @@
   line-height: 20px;
 }
 
-.card__button--current {
+.card-more__button {
   background-image: url("../../icons/plus.svg");
   background-repeat: no-repeat;
   background-color: inherit;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   width: 30px;
   height: 30px;
   border: none;
@@ -122,7 +125,7 @@
   }
 }
 
-.card__inner {
+.card-more__inner {
   margin: 0 0 21px;
 
   @media (min-width: $tablet-width) {
@@ -130,7 +133,7 @@
     padding: 0 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0 0 90px;
   }
@@ -151,7 +154,13 @@
   }
 }
 
-.card__info--more {
+.card-more__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
@@ -161,19 +170,27 @@
   }
 }
 
-.card__content {
+.card-more__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card__title--more {
-  width: auto;
+.card-more__title {
+  width: 76px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
   margin: 0 0 8px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 23px;
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -181,7 +198,21 @@
   }
 }
 
-.card__box {
+.card-more {
+  padding: 24px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 81px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+
+.card-more__box {
   width: 280px;
   margin: 0 auto;
 
@@ -194,7 +225,7 @@
   }
 }
 
-.card__box--more {
+.card-more__box--show {
   @media (min-width: $tablet-width) {
     width: auto;
     border: 1px solid $secondary-background;

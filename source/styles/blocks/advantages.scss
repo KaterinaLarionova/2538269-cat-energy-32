@@ -62,13 +62,14 @@
     display: flex;
     flex-direction: column;
     gap: 31px;
-    padding: 40px 0 57px 0;
+    padding: 40px 0 57px;
+
     @include media-font-size;
   }
 
   @media (min-width: $desktop-width) {
     width: 242px;
-    padding: 40px 0 57px 0;
+    padding: 40px 0 57px;
   }
 }
 
@@ -89,7 +90,7 @@
     line-height: 280px;
     position: absolute;
     right: 24px;
-    top:0;
+    top: 0;
     color: $secondary-background;
     text-align: center;
     z-index: -1;

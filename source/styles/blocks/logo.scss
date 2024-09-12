@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 174px;
-    gap: 13px
+    gap: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,11 +30,12 @@
   }
 }
 
-.logo__link--footer {
+.logo__footer {
   display: flex;
   width: 128px;
   height: 24px;
 }
+
 .logo__image {
   display: block;
   margin-right: 56px;

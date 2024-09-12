@@ -1,15 +1,34 @@
+.location {
+  position: relative;
+}
+
 .location__interactive {
   display: block;
   border: 0;
   height: 362px;
   width: 100%;
+  position: absolute;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+    height: 100%;
+  }
 }
 
 .location__map {
-  display: none;
+  min-width: 100%;
+  height: 362px;
+  position: relative;
+  object-fit: cover;
   margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

@@ -1,6 +1,12 @@
 .main-header {
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(90deg, #68b738d9 1040px, #62a53b 1041px), url("../../images/promo-background-desk@1x.jpg");
+    background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 1040px, #62a53b 1041px),
+    image-set(
+        url("../../images/promo-background-desk@1x.webp") 1x type("image/webp"),
+        url("../../images/promo-background-desk@2x.webp") 2x type("image/webp"),
+        url("../../images/promo-background-desk@1x.jpg") 1x type("image/jpg"),
+        url("../../images/promo-background-desk@2x.jpg") 2x type("image/jpg")
+    );
     background-repeat: no-repeat;
     background-position: 50vw 0, 50vw 0;
     background-size: 100% 694px, 1041px 694px;
@@ -8,12 +14,15 @@
 }
 
 .main-header__toggle {
+  width: 24px;
+  height: 24px;
   border: none;
   padding: 0;
   margin: 0;
   display: block;
   margin-left: auto;
   background-color: $base-background;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -27,6 +36,15 @@
     width: 24px;
     height: 24px;
     display: block;
+  }
+}
+
+.main-header__toggle--close::after {
+  @media (max-width: $mobile-width) {
+    content: "";
+    background-image: url("../../icons/close-button.svg");
+    width: 18px;
+    height: 18px;
   }
 }
 

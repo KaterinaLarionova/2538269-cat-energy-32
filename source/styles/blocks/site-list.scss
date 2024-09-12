@@ -1,8 +1,10 @@
 .site-list {
+  position: absolute;
+  left: 0;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
+  background-color: $base-background;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,10 +12,20 @@
     gap: 34px;
     min-width: 440px;
     margin-left: auto;
+    position: relative;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     gap: 35px;
+    background-color: unset;
+  }
+}
+
+.site-list__no-js {
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    position: absolute;
+    top: 65px;
   }
 }
 
@@ -25,7 +37,7 @@
 
 .site-list__item:first-child {
   @media (max-width: $mobile-width) {
-  border-top: 1px solid $line-color;
+    border-top: 1px solid $line-color;
   }
 }
 
@@ -74,7 +86,7 @@
 
 .site-list__link--catalog {
   @media (min-width: $desktop-width) {
-    color: $promo-color-text
+    color: $promo-color-text;
   }
 }
 

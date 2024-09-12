@@ -70,19 +70,5 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-
-  }
-}
-
-.catalog__card--more {
-  padding: 24px 20px 0;
-
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    padding: 81px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
   }
 }
