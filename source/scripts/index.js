@@ -1,4 +1,5 @@
 /* в этот файл добавляет скрипты*/
+console.log('Ghbdtn');
 let navMain = document.querySelector('.site-list');
 let navToggle = document.querySelector('.main-header__toggle');
 
