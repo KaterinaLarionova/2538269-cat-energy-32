@@ -39,12 +39,30 @@
   }
 }
 
-.main-header__toggle--close::after {
+.main-header__toggle--closed {
+  width: 18px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  background-color: $base-background;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.main-header__toggle--closed::after {
   @media (max-width: $mobile-width) {
     content: "";
     background-image: url("../../icons/close-button.svg");
     width: 18px;
     height: 18px;
+    display: block;
   }
 }
 
