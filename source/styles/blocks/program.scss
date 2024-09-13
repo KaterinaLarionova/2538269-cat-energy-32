@@ -221,6 +221,12 @@
   height: 12px;
   position: relative;
   margin-left: 25px;
+  transition: transform 0.3s linear;
+  transform-origin: left center;
+}
+
+.program__link:hover::after {
+  transform: scaleX(1.35);
 }
 
 .program__link:active {

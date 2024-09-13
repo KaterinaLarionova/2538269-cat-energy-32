@@ -32,7 +32,8 @@
 .main-header__toggle::after {
   @media (max-width: $mobile-width) {
     content: "";
-    background-image: url("../../icons/open-button.svg");
+    mask-image: url("../../icons/open-button.svg");
+    background-color: $primary-color-text;
     width: 24px;
     height: 24px;
     display: block;
@@ -59,7 +60,8 @@
 .main-header__toggle--closed::after {
   @media (max-width: $mobile-width) {
     content: "";
-    background-image: url("../../icons/close-button.svg");
+    mask-image: url("../../icons/close-button.svg");
+    background-color: $primary-color-text;
     width: 18px;
     height: 18px;
     display: block;

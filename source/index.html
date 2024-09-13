@@ -52,12 +52,18 @@
         <h1 class="promo__title">Функциональное<br>питание&nbsp;для&nbsp;котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/webp"
+                  srcset="images/promo-can-desctop@1x.webp, images/promo-can-desctop@2x.webp">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/webp"
+                  srcset="images/promo-can-tablet@1x.webp, images/promo-can-tablet@2x.webp">
+          <source type="image/webp" width="280" height="270"
+                  srcset="images/promo-can-mobile@1x.webp, images/promo-can-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
                   srcset="images/promo-can-desctop@1x.png 1x, images/promo-can-desctop@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png"
                   srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
           <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x"
-                width="280" height="270" alt="Баночка корма с курицей.">
+               width="280" height="270" loading="lazy" alt="Баночка корма с курицей.">
         </picture>
         <a class="button promo__button button--accent" href="#">Подобрать программу</a>
       </div>
@@ -128,21 +134,29 @@
       <div class="stats__slider slider">
         <div class="slider__image">
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp"
+                    srcset="images/cat-fat-tablet@1x.webp, images/cat-fat-tablet@2x.webp">
+            <source type="image/webp" width="280" height="256"
+                    srcset="images/cat-fat-mobile@1x.webp, images/cat-fat-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
                     srcset="images/cat-fat-desctop@1x.png 1x, images/cat-fat-desctop@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg"
                     srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x">
             <img class="slider__image-fat" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x"
-                  width="280" height="256" alt="Фотография упитанного кота.">
+                 width="280" height="256" loading="lazy" alt="Фотография упитанного кота.">
           </picture>
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp"
+                    srcset="images/cat-slim-tablet@1x.webp, images/cat-slim-tablet@2x.webp">
+            <source type="image/webp" width="280" height="256"
+                    srcset="images/cat-slim-mobile@1x.webp, images/cat-slim-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
                     srcset="images/cat-slim-desctop@1x.png 1x, images/cat-slim-desctop@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg"
                     srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
             <img class="slider__image-slim" src="images/cat-slim-mobile@1x.png"
-                  srcset="images/cat-slim-mobile@2x.png 2x"
-                  width="280" height="256" alt="Фотография худого кота.">
+                 srcset="images/cat-slim-mobile@2x.png 2x"
+                 width="280" height="256" loading="lazy" alt="Фотография худого кота.">
           </picture>
           <button class="slider__range" type="button" aria-label="Ренджер сравнение до и после."></button>
         </div>
@@ -160,12 +174,18 @@
     </div>
     <div class="contacts__location location">
       <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp"
+                srcset="images/location-desctop@1x.webp, images/location-desctop@2x.webp">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/webp"
+                srcset="images/location-tablet@1x.webp, images/location-tablet@2x.webp">
+        <source type="image/webp" width="320" height="362"
+                srcset="images/location-mobile@1x.webp, images/location-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
                 srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/png"
                 srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
         <img class="location__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x"
-              width="320" height="362" alt="Карта с адресом">
+             width="320" height="362" loading="lazy" alt="Карта с адресом">
       </picture>
       <iframe class="location__interactive"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197857!2d30.320472476826442!3d59.9387191620941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1725801058405!5m2!1sru!2sru"
@@ -186,19 +206,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"
-                rel="noreferrer noopener">
+               rel="noreferrer noopener">
               <span class="visually-hidden">Перейти во ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-                target="_blank" rel="noreferrer noopener">
+               target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Перейти в Youtube.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
-                rel="noreferrer noopener">
+               rel="noreferrer noopener">
               <span class="visually-hidden">Перейти в Telegram.</span>
             </a>
           </li>
@@ -206,7 +226,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender/20/adaptive/32/module/3"
-            target="_blank" rel="noreferrer noopener">HTML Academy
+           target="_blank" rel="noreferrer noopener">HTML Academy
           <span class="copyright__image"></span>
         </a>
       </div>
