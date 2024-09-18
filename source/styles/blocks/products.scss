@@ -82,8 +82,7 @@
 
   @media (min-width: $tablet-width) {
     @include media-secondary-size;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding: 26px 0 27px;
   }

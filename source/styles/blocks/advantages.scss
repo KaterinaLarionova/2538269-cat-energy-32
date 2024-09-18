@@ -38,16 +38,14 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 37px 137px;
     counter-reset: example 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 83px;
   }
 }

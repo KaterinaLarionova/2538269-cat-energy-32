@@ -6,12 +6,14 @@
   line-height: 14px;
 
   @media (max-width: $mobile-width) {
-    background-image: image-set(
+    background-image:
+      image-set(
         url("../../images/promo-background-mobile@1x.webp") 1x type("image/webp"),
         url("../../images/promo-background-mobile@2x.webp") 2x type("image/webp"),
         url("../../images/promo-background-mobile@1x.jpg") 1x type("image/jpg"),
-        url("../../images/promo-background-mobile@2x.jpg") 2x type("image/jpg")),
-    linear-gradient(#64a73b 302px, #ffffff 302px);
+        url("../../images/promo-background-mobile@2x.jpg") 2x type("image/jpg")
+      ),
+      linear-gradient(#64a73b 302px, #ffffff 302px);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 320px 302px, 100%;
