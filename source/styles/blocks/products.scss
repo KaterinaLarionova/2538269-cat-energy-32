@@ -17,7 +17,7 @@
 .products__title {
   position: relative;
   width: fit-content;
-  margin: 0 0 36px;
+  margin: 0 0 34px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
@@ -29,11 +29,11 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin: 0 0 79px 40px;
+    margin: 0 0 80px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 78px;
+    margin: 0 0 79px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 14px;
+    top: 18px;
   }
 }
 
@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 16px;
+    padding: 15px 1px 16px;
   }
 }
 
@@ -109,7 +109,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 38px;
+    padding-left: 39px;
     margin-bottom: 25px;
   }
 
@@ -124,12 +124,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     padding-right: 38px;
-    gap: 49px;
+    margin-bottom: 20px;
+    gap: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,8 +141,15 @@
 }
 
 .products__price {
+  width: 36px;
   margin: 0;
-  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 41px;
+  }
 }
 
 .products__button {
@@ -169,7 +177,7 @@
 }
 
 .products__gift {
-  margin-top: 36px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;

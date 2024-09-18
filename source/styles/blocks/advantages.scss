@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 40px;
+  margin: 0 1px 40px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
@@ -89,7 +89,7 @@
     font-size: 280px;
     line-height: 280px;
     position: absolute;
-    right: 24px;
+    right: 6px;
     top: 0;
     color: $secondary-background;
     text-align: center;
@@ -112,7 +112,7 @@
   position: relative;
   content: "";
   background-image: url("../../icons/icon-leaf.svg");
-  background-size: 30px 32px;
+  background-size: 25px 32px;
   background-repeat: no-repeat;
 
   @include background-item;
@@ -146,4 +146,13 @@
   background-repeat: no-repeat;
 
   @include background-item;
+}
+
+.advantages__text {
+  padding: 2px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

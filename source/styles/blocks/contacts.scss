@@ -16,7 +16,7 @@
     background-color: $base-background;
     width: 565px;
     height: 199px;
-    padding: 60px 78px 58px;
+    padding: 60px 78px 58px 79px;
     top: 96px;
     gap: 87px;
     right: calc(1220px - 456px);
@@ -54,6 +54,6 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    gap: 18px;
   }
 }
-

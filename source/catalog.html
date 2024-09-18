@@ -14,7 +14,7 @@
 <body class="page__body">
 <header class="main-header main-header--catalog">
   <nav class="main-nav wrapper">
-    <div class="logo">
+    <div class="main-nav__logo logo">
       <a class="logo__link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59"
@@ -24,7 +24,7 @@
           <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <a class="logo__link logo__link--header" href="index.html">
+      <a class="logo__link logo__link--header logo__link--catalog" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21"
                   type="image/svg+xml">
@@ -34,8 +34,8 @@
         </picture>
       </a>
     </div>
-    <button class="main-header__toggle" type="button" aria-label="Откройте меню."></button>
-    <ul class="site-list site-list__no-js">
+    <button class="main-nav__toggle main-nav__toggle--closed  main-nav__toggle--nojs" type="button" aria-label="Откройте меню."></button>
+    <ul class="site-list site-list--closed site-list--nojs">
       <li class="site-list__item">
         <a class="site-list__link site-list__link--catalog" href="index.html" aria-current="page">Главная</a>
       </li>
@@ -466,8 +466,10 @@
   <div class="main-footer__background">
     <div class="main-footer__wrapper wrapper">
       <div class="main-footer__logo logo">
-        <a class="logo__link logo__link--footer" href="index.html">
-          <img class="logo__text" src="images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy.">
+        <a class="logo__link logo__link--footer" aria-label="Логотип Кэт Энерджи" href="index.html">
+          <svg class="logo__footer" width="128" height="24">
+            <use href="icons/stack.svg#logo-text"></use>
+          </svg>
         </a>
       </div>
       <div class="main-footer__social social">

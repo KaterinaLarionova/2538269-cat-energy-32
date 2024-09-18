@@ -30,7 +30,7 @@
 }
 
 .program__item {
-  padding: 30px 33px 18px 20px;
+  padding: 30px 32px 16px 20px;
   background-color: $secondary-background;
   position: relative;
 
@@ -43,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 77px 61px 55px 52px;
+    padding: 76px 61px 55px 52px;
   }
 }
 
@@ -60,14 +60,14 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    right: 44px;
+    right: 43px;
     margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 34px;
+    top: 32px;
     right: auto;
   }
 }
@@ -86,14 +86,14 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    bottom: 15px;
+    bottom: 17px;
     left: calc(50% - 70px);
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    bottom: 15px;
+    bottom: 9px;
     left: calc(50% - 35px);
   }
 }
@@ -104,20 +104,20 @@
   height: 50px;
   border-radius: 50%;
   display: block;
-  margin-top: -3px;
+  margin-top: -5px;
   position: absolute;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    right: 66px;
-    margin-top: 15px;
+    right: 63px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 34px;
+    top: 33px;
     right: auto;
   }
 }
@@ -136,20 +136,20 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    bottom: 45px;
+    bottom: 44px;
     left: calc(50% - 130px);
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
-    bottom: 25px;
-    left: calc(50% - 66px);
+    bottom: 24px;
+    left: calc(50% - 67px);
   }
 }
 
 .program__title {
-  margin: 0 0 29px 20px;
+  margin: 0 0 29px 21px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 37px;
@@ -161,18 +161,19 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 24px;
+    margin: 0 0 24px 1px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 163px;
-    margin-bottom: 73px;
+    margin-left: 162px;
+    margin-bottom: 74px;
   }
 }
 
 .program__title--fat {
   @media (max-width: $mobile-width) {
-    margin-left: 50px;
+    margin-left: 51px;
+    margin-top: 1px;
   }
 }
 
@@ -194,7 +195,7 @@
 
 .program__link {
   display: flex;
-  padding: 4px 57px 4px 0;
+  padding: 3px 57px 5px 1px;
   margin-top: 15px;
   font-family: $oswald;
   font-size: 16px;
@@ -214,15 +215,20 @@
 }
 
 .program__link::after {
-  display: block;
+  display: flex;
+  align-self: center;
   content: "";
   background-image: url("../../icons/icon-sring.svg");
   width: 24px;
   height: 12px;
   position: relative;
-  margin-left: 25px;
+  margin-left: 16px;
   transition: transform 0.3s linear;
   transform-origin: left center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 26px;
+  }
 }
 
 .program__link:hover::after {

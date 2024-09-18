@@ -100,7 +100,7 @@
   width: 280px;
   padding: 12px;
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -110,6 +110,10 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+}
+
+.subscribe__input:hover {
+  border: 1px solid #cdcdcd;
 }
 
 .subscribe__input::placeholder {

@@ -2,7 +2,7 @@
   padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 101px;
+    padding: 44px 0 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,18 +15,18 @@
   background: $special-background;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 615px, #f2f2f2 160px);
+    background-image: linear-gradient(#ffffff 618px, #f2f2f2 160px);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#ffffff 140px, #f2f2f2 140px);
+    background-image: linear-gradient(#ffffff 136px, #f2f2f2 135px);
   }
 }
 
 .stats__container {
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 224px;
+    gap: 225px;
   }
 }
 
@@ -91,11 +91,11 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  margin: 0 0 34px;
+  margin: 0 0 32px;
 
   @media (min-width: $tablet-width) {
     width: 367px;
-    margin-bottom: 103px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,6 +107,7 @@
   width: 124px;
   position: relative;
   border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -118,7 +119,7 @@
   line-height: 12px;
   text-align: center;
   position: absolute;
-  bottom: -4px;
+  bottom: 4px;
   left: 50%;
   margin: 0 auto -5px;
   transform: translate(-50%, 50%);
@@ -130,7 +131,7 @@
     background-color: $base-background;
     bottom: 6px;
     left: 14%;
-    right: 5%;
+    right: 3%;
     transform: translate(-7%, 50%);
   }
 
@@ -167,19 +168,20 @@
 
   @media (min-width: $tablet-width) {
     width: 172px;
-    padding-top: 10px;
+    padding-top: 11px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 9px;
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 367px;
+    width: 327px;
     flex-direction: row;
-    gap: 63px;
+    justify-content: space-between;
+    padding: 10px 0 0 2px;
   }
 }
