@@ -5,7 +5,7 @@ const navToggle = document.querySelector('.main-nav__toggle--closed');
 navMain.classList.remove('site-list--nojs');
 navToggle.classList.remove('main-nav__toggle--nojs');
 
-navToggle.addEventListener('click', function () {
+function burger() {
   if (navToggle.classList.contains('main-nav__toggle--open')) {
     navMain.classList.add('site-list--closed');
     navToggle.classList.remove('main-nav__toggle--open');
@@ -16,4 +16,5 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.add('main-nav__toggle--open');
     navToggle.classList.remove('main-nav__toggle--closed');
   }
-});
+}
+navToggle.addEventListener('click', burger);
